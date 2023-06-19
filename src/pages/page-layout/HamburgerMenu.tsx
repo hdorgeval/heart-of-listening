@@ -6,6 +6,7 @@ import {
   LoginAccountBadge,
   LogoutAccountBadge,
 } from '../../components/auth/MyAccount';
+import { websiteConfig } from '../../website.config';
 
 export const HambugerMenu: FC = () => {
   const location = useLocation();
@@ -14,7 +15,11 @@ export const HambugerMenu: FC = () => {
   }, [location.pathname]);
   return (
     <nav className="navbar navbar-dark sticky-top position-absolute top-0 end-0 w-100">
-      <div className="container-fluid pe-0 me-1 d-flex flex-row">
+      <div
+        className={`container-fluid pe-0 me-1 d-flex flex-row ${
+          websiteConfig.hamburgerMenuPosition === 'left' ? 'flex-row-reverse' : ''
+        }`}
+      >
         {isOnHomePage ? (
           <div className="flex-grow-1"></div>
         ) : (
@@ -36,7 +41,9 @@ export const HambugerMenu: FC = () => {
         </button>
 
         <div
-          className="offcanvas offcanvas-end text-bg-dark"
+          className={`offcanvas  text-bg-dark ${
+            websiteConfig.hamburgerMenuPosition === 'left' ? 'offcanvas-start' : 'offcanvas-end'
+          }`}
           tabIndex={-1}
           id="offcanvasDarkNavbar"
           aria-labelledby="offcanvasDarkNavbarLabel"

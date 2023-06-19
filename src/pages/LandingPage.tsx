@@ -4,6 +4,7 @@ import { usePublicPage } from '../contexts/userContext';
 import { useGuidedTour } from '../hooks/useGuidedTour';
 import { useMetaDescription } from '../hooks/useMetaDescription';
 import { useTitle } from '../hooks/useTitle';
+import { websiteConfig } from '../website.config';
 import { Footer } from './page-layout/Footer';
 import { HambugerMenu } from './page-layout/HamburgerMenu';
 import { PageSubTitle } from './page-layout/PageSubTitle';
@@ -11,8 +12,8 @@ import { PageTitle } from './page-layout/PageTitle';
 export const LandingPage: FC = () => {
   usePublicPage();
   useGuidedTour();
-  useTitle('Accueil | My Web Site');
-  useMetaDescription('Accueil | My Web Site');
+  useTitle(`Accueil | ${websiteConfig.websiteTitle}`);
+  useMetaDescription(`Accueil | ${websiteConfig.websiteTitle}`);
   return (
     <>
       <HambugerMenu />
@@ -31,12 +32,12 @@ export const LandingPage: FC = () => {
           }}
         >
           <div className="container h-100 d-flex flex-column justify-content-between align-items-center overflow-y-scroll">
-            <div className="p-2 flex-grow-1 bd-highlight"></div>
+            <div className="p-2 flex-grow-1"></div>
             <div className="mt-4">
-              <PageTitle>Au coeur de l'écoute</PageTitle>
+              <PageTitle>{websiteConfig.websiteTitle}</PageTitle>
             </div>
             <div>
-              <PageSubTitle className="fs-7">My awsome short description</PageSubTitle>
+              <PageSubTitle className="fs-7">{websiteConfig.websiteSubTitle}</PageSubTitle>
             </div>
             <OpenExternalLinkButton
               className="btn btn-outline-light fw-bolder w-75 mt-4"

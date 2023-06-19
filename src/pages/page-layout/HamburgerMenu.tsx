@@ -32,7 +32,7 @@ export const HambugerMenu: FC = () => {
           aria-label="Menu"
           data-tour-id="step-1"
         >
-          <i className="bi bi-list text-white fs-navbar-toggler-2"></i>
+          <i className="bi bi-list text-white fs-navbar-toggler-3"></i>
         </button>
 
         <div
@@ -92,7 +92,7 @@ export const HambugerMenu: FC = () => {
                 <div className="d-flex p-1 flex-row flex-wrap align-items-center">
                   <Link to="/#">
                     <span className="badge rounded-pill text-bg-dark fs-7 border border-secondary m-1">
-                      Séance Individuelle
+                      Séance individuelle
                     </span>
                   </Link>
                 </div>

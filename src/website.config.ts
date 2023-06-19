@@ -6,4 +6,6 @@ export const websiteConfig = {
   phoneNumber: '0614763770',
   email: 'john.doe@gmail.com',
   copyrightOwner: 'John Doe',
+  websiteTitle: "Au coeur de l'écoute",
+  websiteSubTitle: 'Lorem ipsum dolor sit amet',
 };

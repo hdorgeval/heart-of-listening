@@ -2,6 +2,7 @@ import { FC } from 'react';
 import { Description } from '../components/Description';
 import { FiveStarRating } from '../components/FiveStarRating';
 import { OneLetterPill } from '../components/OneLetterPill';
+import { websiteConfig } from '../website.config';
 import { PageTitle } from './page-layout/PageTitle';
 import { PublicPageLayoutWithFixedBackgroundImage } from './page-layout/PublicPageLayoutWithFixedBackgroundImage';
 export const Temoignages: FC = () => {
@@ -11,7 +12,7 @@ export const Temoignages: FC = () => {
         backgroundImageUrl="/images/background-temoignages.webp"
         backgroundOverlay="linear-gradient(to bottom,rgba(0, 0, 0, 0.5), rgba(79, 79, 93, 0.1), rgba(79, 79, 93, 0.7) 90% 100%)"
         backgroundPosition="33%"
-        htmlTitle="Témoignages | Marie-Anne Sévin"
+        htmlTitle={`Témoignages | ${websiteConfig.websiteTitle}`}
       >
         <div>
           <div className="mt-6">

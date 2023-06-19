@@ -46,8 +46,6 @@ export const LandingPage: FC = () => {
               analyticsEvent="rdv-ou-contact"
             >
               <div className="d-flex flex-column align-items-center">
-                <span>Me contacter</span>
-                <span>ou</span>
                 <span>Prendre un rendez-vous</span>
               </div>
             </OpenExternalLinkButton>

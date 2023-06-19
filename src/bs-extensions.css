@@ -223,3 +223,11 @@
 .pt-1-half {
   padding-top: 0.12rem !important;
 }
+
+.fs-navbar-toggler-2 {
+  font-size: calc(3.375rem + 1.5vw) !important;
+}
+
+.fs-navbar-toggler-3 {
+  font-size: calc(2.375rem + 1.5vw) !important;
+}

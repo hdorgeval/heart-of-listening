@@ -26,7 +26,10 @@ export interface DateInfos {
   isPassed: boolean;
 }
 
-function extractDateInfosFromIsoDate(isoDate: string): DateInfos {
+function extractDateInfosFromIsoDate(isoDate: string | undefined): DateInfos | undefined {
+  if (!isoDate) {
+    return undefined;
+  }
   const year = new Intl.DateTimeFormat('fr', { year: 'numeric' }).format(new Date(isoDate));
   const day = new Intl.DateTimeFormat('fr', { day: 'numeric' }).format(new Date(isoDate));
   const weekday = new Intl.DateTimeFormat('fr', { weekday: 'long' }).format(new Date(isoDate));
@@ -43,26 +46,37 @@ function extractDateInfosFromIsoDate(isoDate: string): DateInfos {
   };
 }
 
-export const useCalendar = (options: CalendarOptions) => {
-  const startDateInfos = extractDateInfosFromIsoDate(options.startDate);
-  const endDateInfos = extractDateInfosFromIsoDate(options.endDate);
+export const useCalendar = (options?: CalendarOptions) => {
+  const startDateInfos = extractDateInfosFromIsoDate(options?.startDate);
+  const endDateInfos = extractDateInfosFromIsoDate(options?.endDate);
+
+  const currentYear = useMemo(() => {
+    return new Intl.DateTimeFormat('fr', { year: 'numeric' }).format(new Date());
+  }, []);
 
   const fromStartDateToEndDateText = useMemo(() => {
-    if (startDateInfos.year === endDateInfos.year && startDateInfos.month === endDateInfos.month) {
+    if (
+      startDateInfos &&
+      endDateInfos &&
+      startDateInfos.year === endDateInfos.year &&
+      startDateInfos.month === endDateInfos.month
+    ) {
       return `Du ${startDateInfos.day} au ${endDateInfos.day} ${startDateInfos.month} ${startDateInfos.year}`;
     }
 
-    if (startDateInfos.year === endDateInfos.year && startDateInfos.month !== endDateInfos.month) {
+    if (
+      startDateInfos &&
+      endDateInfos &&
+      startDateInfos.year === endDateInfos.year &&
+      startDateInfos.month !== endDateInfos.month
+    ) {
       return `Du ${startDateInfos.day} ${startDateInfos.month} au ${endDateInfos.day} ${endDateInfos.month} ${startDateInfos.year}`;
     }
-    return `Du ${startDateInfos.day} ${startDateInfos.month} ${startDateInfos.year} au ${endDateInfos.day} ${endDateInfos.month} ${endDateInfos.year}`;
-  }, [
-    endDateInfos.day,
-    endDateInfos.month,
-    endDateInfos.year,
-    startDateInfos.day,
-    startDateInfos.month,
-    startDateInfos.year,
-  ]);
-  return { startDateInfos, endDateInfos, fromStartDateToEndDateText };
+
+    if (startDateInfos && endDateInfos) {
+      return `Du ${startDateInfos.day} ${startDateInfos.month} ${startDateInfos.year} au ${endDateInfos.day} ${endDateInfos.month} ${endDateInfos.year}`;
+    }
+  }, [endDateInfos, startDateInfos]);
+
+  return { currentYear, startDateInfos, endDateInfos, fromStartDateToEndDateText };
 };

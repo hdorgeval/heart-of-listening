@@ -1,15 +1,11 @@
 import { FC } from 'react';
 import { Link } from 'react-router-dom';
 import { OpenExternalLink } from '../../components/OpenExternalLink';
-import {
-  myFacebookLink,
-  myInstagramLink,
-  myPhoneNumber,
-  myWhatsAppLink,
-  myYoutubeLink,
-} from '../../my-links';
-
+import { useCalendar } from '../../hooks/useCalendar';
+import { websiteConfig } from '../../website.config';
 export const Footer: FC = () => {
+  const { currentYear } = useCalendar();
+
   return (
     <footer className="">
       <div className="d-flex flex-column align-items-center">
@@ -17,7 +13,7 @@ export const Footer: FC = () => {
           <span className="fs-1">
             <OpenExternalLink
               className="nav-link"
-              link={myFacebookLink}
+              link={websiteConfig.facebookLink}
               relationship="nofollow"
               aria-label="my facebook"
               title="my facebook"
@@ -29,7 +25,7 @@ export const Footer: FC = () => {
           <span className="fs-1 ms-3">
             <OpenExternalLink
               className="nav-link"
-              link={myWhatsAppLink}
+              link={websiteConfig.whatsAppLink}
               relationship="nofollow"
               aria-label="my whatsapp"
               title="my whatsapp"
@@ -41,7 +37,7 @@ export const Footer: FC = () => {
           <span className="fs-1 ms-3">
             <OpenExternalLink
               className="nav-link"
-              link={myYoutubeLink}
+              link={websiteConfig.youtubeLink}
               relationship="nofollow"
               aria-label="my youtube"
               title="my youtube"
@@ -53,7 +49,7 @@ export const Footer: FC = () => {
           <span className="fs-1 ms-3">
             <OpenExternalLink
               className="nav-link"
-              link={myInstagramLink}
+              link={websiteConfig.instagramLink}
               relationship="nofollow"
               aria-label="my instagram"
               title="my instagram"
@@ -65,7 +61,7 @@ export const Footer: FC = () => {
           <span className="fs-1 ms-3">
             <OpenExternalLink
               className="nav-link"
-              link={`tel:${myPhoneNumber}`}
+              link={`tel:${websiteConfig.phoneNumber}`}
               relationship="nofollow"
               aria-label="m'appeler par téléphone"
               title="m'appeler par téléphone"
@@ -77,7 +73,7 @@ export const Footer: FC = () => {
           <span className="fs-1 ms-3">
             <OpenExternalLink
               className="nav-link"
-              link="mailto:arts78.mas@gmail.com"
+              link={`mailto:${websiteConfig.email}`}
               relationship="nofollow"
               aria-label="m'envoyer un mail"
               title="m'envoyer un mail"
@@ -86,22 +82,11 @@ export const Footer: FC = () => {
               <i className="bi bi-envelope-at"></i>
             </OpenExternalLink>
           </span>
-          <span className="fs-1 ms-3">
-            <OpenExternalLink
-              className="nav-link"
-              link="https://amzn.eu/d/dd3iN4K"
-              relationship="nofollow"
-              aria-label="voir mon livre 'harmonie pédagogique' sur Amazon"
-              title="voir mon livre 'harmonie pédagogique' sur Amazon"
-              analyticsEvent="open-amazon-on-my-book"
-            >
-              <i className="bi bi-book"></i>
-            </OpenExternalLink>
-          </span>
         </div>
 
         <span className="fs-7 fw-lighter mb-1">
-          <i className="bi bi-c-circle me-2"></i>tous droits réservés Marie-Anne Sévin - 2023
+          <i className="bi bi-c-circle me-2"></i>
+          {`tous droits réservés ${websiteConfig.copyrightOwner} - ${currentYear}`}
         </span>
         <span className="fs-7 mb-2">
           <Link to="/mentions-legales" className="nav-link">

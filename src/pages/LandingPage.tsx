@@ -11,8 +11,8 @@ import { PageTitle } from './page-layout/PageTitle';
 export const LandingPage: FC = () => {
   usePublicPage();
   useGuidedTour();
-  useTitle('Accueil | Marie-Anne Sévin');
-  useMetaDescription('Accueil | Marie-Anne Sévin');
+  useTitle('Accueil | My Web Site');
+  useMetaDescription('Accueil | My Web Site');
   return (
     <>
       <HambugerMenu />
@@ -20,7 +20,7 @@ export const LandingPage: FC = () => {
       <div
         className="bg-image"
         style={{
-          backgroundImage: `url("/images/test.jpg")`,
+          backgroundImage: `url("/images/landing-page-background.jpg")`,
           height: '100vh',
         }}
       >
@@ -33,12 +33,10 @@ export const LandingPage: FC = () => {
           <div className="container h-100 d-flex flex-column justify-content-between align-items-center overflow-y-scroll">
             <div className="p-2 flex-grow-1 bd-highlight"></div>
             <div className="mt-4">
-              <PageTitle>Marie-Anne Sévin</PageTitle>
+              <PageTitle>Au coeur de l'écoute</PageTitle>
             </div>
             <div>
-              <PageSubTitle className="fs-7">
-                Accompagnement Relationnel, Thérapeutique et Systémique
-              </PageSubTitle>
+              <PageSubTitle className="fs-7">My awsome short description</PageSubTitle>
             </div>
             <OpenExternalLinkButton
               className="btn btn-outline-light fw-bolder w-75 mt-4"

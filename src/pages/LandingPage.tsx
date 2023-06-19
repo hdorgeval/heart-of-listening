@@ -32,7 +32,7 @@ export const LandingPage: FC = () => {
           }}
         >
           <div className="container h-100 d-flex flex-column justify-content-between align-items-center overflow-y-scroll">
-            <div className="p-2 flex-grow-1"></div>
+            <div className="flex-grow-1"></div>
             <div className="mt-4">
               <PageTitle>{websiteConfig.websiteTitle}</PageTitle>
             </div>

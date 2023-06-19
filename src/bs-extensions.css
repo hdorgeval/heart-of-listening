@@ -231,3 +231,11 @@
 .fs-navbar-toggler-3 {
   font-size: calc(2.375rem + 1.5vw) !important;
 }
+
+.mt-6 {
+  margin-top: 4rem !important;
+}
+
+.mt-7 {
+  margin-top: 5rem !important;
+}

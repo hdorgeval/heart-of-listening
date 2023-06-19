@@ -1,6 +1,8 @@
 import { FC } from 'react';
 import { usePublicPage } from '../contexts/userContext';
+import { useMetaDescription } from '../hooks/useMetaDescription';
 import { useTitle } from '../hooks/useTitle';
+import { websiteConfig } from '../website.config';
 import { Footer } from './page-layout/Footer';
 import { HambugerMenu } from './page-layout/HamburgerMenu';
 import { PageSubTitle } from './page-layout/PageSubTitle';
@@ -12,13 +14,14 @@ import { PageTitle } from './page-layout/PageTitle';
 
 export const MentionsLegales: FC = () => {
   usePublicPage();
-  useTitle('Mentions légales | Marie-Anne Sévin');
+  useTitle(`Mentions légales | ${websiteConfig.websiteTitle}`);
+  useMetaDescription(`Mentions légales | ${websiteConfig.websiteTitle}`);
   return (
     <>
       <HambugerMenu />
       <div className="position-relative" style={{ height: '100vh', minHeight: '0' }}>
         <div className="container h-100 d-flex flex-column justify-content-between align-items-center overflow-y-scroll">
-          <div className="mt-5">
+          <div className="mt-7">
             <PageTitle>Mentions légales</PageTitle>
           </div>
           <div>

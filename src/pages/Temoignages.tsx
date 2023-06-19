@@ -14,7 +14,7 @@ export const Temoignages: FC = () => {
         htmlTitle="Témoignages | Marie-Anne Sévin"
       >
         <div>
-          <div className="mt-4 pt-4">
+          <div className="mt-6">
             <PageTitle>Témoignages</PageTitle>
           </div>
 

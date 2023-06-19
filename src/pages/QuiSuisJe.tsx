@@ -29,7 +29,7 @@ export const QuiSuisJe: FC = () => {
           }}
         >
           <div className="container h-100 d-flex flex-column justify-content-between align-items-center overflow-y-scroll">
-            <div className="mt-4">
+            <div className="mt-6">
               <PageTitle>Qui suis-je ?</PageTitle>
             </div>
             <div className="" style={{ minHeight: '3rem' }}></div>

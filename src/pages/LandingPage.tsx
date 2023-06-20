@@ -34,7 +34,7 @@ export const LandingPage: FC = () => {
           <div className="container h-100 d-flex flex-column justify-content-between align-items-center overflow-y-scroll">
             <div className="flex-grow-1"></div>
             <div className="mt-4">
-              <PageTitle>{websiteConfig.websiteTitle}</PageTitle>
+              <PageTitle className="font-marcellus">{websiteConfig.websiteTitle}</PageTitle>
             </div>
             <div>
               <PageSubTitle className="fs-7">{websiteConfig.websiteSubTitle}</PageSubTitle>

@@ -9,10 +9,10 @@ export const SocialLinksHorizontalBar: FC = () => {
         <span className="fs-1">
           <OpenExternalLink
             className="nav-link"
-            link={websiteConfig.links.facebook}
+            link={websiteConfig.links.facebook.url}
             relationship="nofollow"
-            aria-label="my facebook"
-            title="my facebook"
+            aria-label={websiteConfig.links.facebook.label}
+            title={websiteConfig.links.facebook.title}
             analyticsEvent="open-my-facebook"
           >
             <i className="bi bi-facebook"></i>
@@ -23,10 +23,10 @@ export const SocialLinksHorizontalBar: FC = () => {
         <span className="fs-1 ms-3">
           <OpenExternalLink
             className="nav-link"
-            link={websiteConfig.links.whatsApp}
+            link={websiteConfig.links.whatsApp.url}
             relationship="nofollow"
-            aria-label="my whatsapp"
-            title="my whatsapp"
+            aria-label={websiteConfig.links.whatsApp.label}
+            title={websiteConfig.links.whatsApp.title}
             analyticsEvent="open-my-whatsapp"
           >
             <i className="bi bi-whatsapp"></i>
@@ -38,10 +38,10 @@ export const SocialLinksHorizontalBar: FC = () => {
         <span className="fs-1 ms-3">
           <OpenExternalLink
             className="nav-link"
-            link={websiteConfig.links.youtube}
+            link={websiteConfig.links.youtube.url}
             relationship="nofollow"
-            aria-label="my youtube"
-            title="my youtube"
+            aria-label={websiteConfig.links.youtube.label}
+            title={websiteConfig.links.youtube.title}
             analyticsEvent="open-my-youtube"
           >
             <i className="bi bi-youtube"></i>
@@ -53,10 +53,10 @@ export const SocialLinksHorizontalBar: FC = () => {
         <span className="fs-1 ms-3">
           <OpenExternalLink
             className="nav-link"
-            link={websiteConfig.links.instagram}
+            link={websiteConfig.links.instagram.url}
             relationship="nofollow"
-            aria-label="my instagram"
-            title="my instagram"
+            aria-label={websiteConfig.links.instagram.label}
+            title={websiteConfig.links.instagram.title}
             analyticsEvent="open-my-instagram"
           >
             <i className="bi bi-instagram"></i>

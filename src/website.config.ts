@@ -16,11 +16,16 @@ export interface LegalNotice {
   lastUpdate: string; // date in ISO format : yyyy/mm/dd
 }
 
+export interface Link {
+  url: string;
+  title: string;
+  label: string;
+}
 export interface Links {
-  facebook: string;
-  instagram: string;
-  whatsApp: string;
-  youtube: string;
+  facebook: Link;
+  instagram: Link;
+  whatsApp: Link;
+  youtube: Link;
 }
 
 export const websiteConfig: WebSiteConfig = {
@@ -37,9 +42,25 @@ export const websiteConfig: WebSiteConfig = {
   },
   displaySocialLinksInFooter: true,
   links: {
-    youtube: 'https://www.youtube.com/channel/0123456789',
-    instagram: 'https://www.instagram.com/john-doe/?hl=fr',
-    facebook: 'https://www.facebook.com/john-doe',
-    whatsApp: 'https://wa.me/0123456789',
+    youtube: {
+      url: 'https://www.youtube.com/channel/0123456789',
+      title: 'Voir mes vidéos sur Youtube',
+      label: 'Youtube',
+    },
+    instagram: {
+      url: 'https://www.instagram.com/john-doe/?hl=fr',
+      title: 'Me contacter sur Instagram',
+      label: 'Instagram',
+    },
+    facebook: {
+      url: 'https://www.facebook.com/john-doe',
+      title: 'Me contacter sur Facebook',
+      label: 'Facebook',
+    },
+    whatsApp: {
+      url: 'https://wa.me/0123456789',
+      title: 'Me contacter sur WhatsApp',
+      label: 'WhatsApp',
+    },
   },
 };

@@ -1,6 +1,5 @@
 export interface WebSiteConfig {
   copyrightOwner: string;
-  email: string;
   hamburgerMenuPosition: 'left' | 'right';
   phoneNumber: string;
   websiteSubTitle: string;
@@ -27,11 +26,11 @@ export interface Links {
   instagram: Link;
   whatsApp: Link;
   youtube: Link;
+  email: Link;
 }
 
 export const websiteConfig: WebSiteConfig = {
   copyrightOwner: 'John Doe',
-  email: 'john.doe@gmail.com',
   hamburgerMenuPosition: 'left',
   phoneNumber: '0614763770',
   websiteSubTitle: 'Lorem ipsum dolor sit amet',
@@ -43,6 +42,12 @@ export const websiteConfig: WebSiteConfig = {
   },
   displaySocialLinksInFooter: true,
   links: {
+    email: {
+      url: 'john.doe@gmail.com',
+      title: "M'envoyer un e-mail",
+      label: 'Email',
+      show: true,
+    },
     youtube: {
       url: 'https://www.youtube.com/channel/0123456789',
       title: 'Voir mes vidéos sur Youtube',

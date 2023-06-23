@@ -76,18 +76,20 @@ export const SocialLinksHorizontalBar: FC = () => {
           <i className="bi bi-telephone-outbound"></i>
         </OpenExternalLink>
       </span>
-      <span className="fs-1 ms-3">
-        <OpenExternalLink
-          className="nav-link"
-          link={`mailto:${websiteConfig.email}`}
-          relationship="nofollow"
-          aria-label="m'envoyer un mail"
-          title="m'envoyer un mail"
-          analyticsEvent="envoie-mail"
-        >
-          <i className="bi bi-envelope-at"></i>
-        </OpenExternalLink>
-      </span>
+      {websiteConfig.links.email.show && (
+        <span className="fs-1 ms-3">
+          <OpenExternalLink
+            className="nav-link"
+            link={`mailto:${websiteConfig.links.email.url}`}
+            relationship="nofollow"
+            aria-label={websiteConfig.links.email.label}
+            title={websiteConfig.links.email.title}
+            analyticsEvent="envoie-mail"
+          >
+            <i className="bi bi-envelope-at"></i>
+          </OpenExternalLink>
+        </span>
+      )}
     </div>
   );
 };

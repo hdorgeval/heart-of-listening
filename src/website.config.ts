@@ -9,6 +9,7 @@ export interface WebSiteConfig {
   websiteUrl: string;
   legalNotice: LegalNotice;
   links: Links;
+  displaySocialLinksInFooter: boolean;
 }
 
 export interface LegalNotice {
@@ -34,6 +35,7 @@ export const websiteConfig: WebSiteConfig = {
   legalNotice: {
     lastUpdate: '2023/06/21',
   },
+  displaySocialLinksInFooter: true,
   links: {
     youtube: 'https://www.youtube.com/channel/0123456789',
     instagram: 'https://www.instagram.com/john-doe/?hl=fr',

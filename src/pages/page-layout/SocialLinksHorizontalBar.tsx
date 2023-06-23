@@ -5,7 +5,7 @@ import { websiteConfig } from '../../website.config';
 export const SocialLinksHorizontalBar: FC = () => {
   return (
     <div className="d-flex p-4 flex-row align-items-center">
-      {websiteConfig.links.facebook && (
+      {websiteConfig.links.facebook.show && (
         <span className="fs-1">
           <OpenExternalLink
             className="nav-link"
@@ -19,7 +19,7 @@ export const SocialLinksHorizontalBar: FC = () => {
           </OpenExternalLink>
         </span>
       )}
-      {websiteConfig.links.whatsApp && (
+      {websiteConfig.links.whatsApp.show && (
         <span className="fs-1 ms-3">
           <OpenExternalLink
             className="nav-link"
@@ -34,7 +34,7 @@ export const SocialLinksHorizontalBar: FC = () => {
         </span>
       )}
 
-      {websiteConfig.links.youtube && (
+      {websiteConfig.links.youtube.show && (
         <span className="fs-1 ms-3">
           <OpenExternalLink
             className="nav-link"
@@ -49,7 +49,7 @@ export const SocialLinksHorizontalBar: FC = () => {
         </span>
       )}
 
-      {websiteConfig.links.instagram && (
+      {websiteConfig.links.instagram.show && (
         <span className="fs-1 ms-3">
           <OpenExternalLink
             className="nav-link"

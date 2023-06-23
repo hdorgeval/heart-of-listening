@@ -17,6 +17,7 @@ export interface LegalNotice {
 }
 
 export interface Link {
+  show: boolean;
   url: string;
   title: string;
   label: string;
@@ -46,21 +47,25 @@ export const websiteConfig: WebSiteConfig = {
       url: 'https://www.youtube.com/channel/0123456789',
       title: 'Voir mes vidéos sur Youtube',
       label: 'Youtube',
+      show: true,
     },
     instagram: {
       url: 'https://www.instagram.com/john-doe/?hl=fr',
       title: 'Me contacter sur Instagram',
       label: 'Instagram',
+      show: true,
     },
     facebook: {
       url: 'https://www.facebook.com/john-doe',
       title: 'Me contacter sur Facebook',
       label: 'Facebook',
+      show: true,
     },
     whatsApp: {
       url: 'https://wa.me/0123456789',
       title: 'Me contacter sur WhatsApp',
       label: 'WhatsApp',
+      show: true,
     },
   },
 };

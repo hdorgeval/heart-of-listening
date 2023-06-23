@@ -41,7 +41,7 @@ export const HambugerMenu: FC = () => {
         </button>
 
         <div
-          className={`offcanvas  text-bg-dark ${
+          className={`offcanvas text-bg-dark ${
             websiteConfig.hamburgerMenuPosition === 'left' ? 'offcanvas-start' : 'offcanvas-end'
           }`}
           tabIndex={-1}
@@ -50,7 +50,7 @@ export const HambugerMenu: FC = () => {
         >
           <div className="offcanvas-header">
             <h5 className="offcanvas-title" id="offcanvasDarkNavbarLabel">
-              Au coeur de l'écoute
+              {websiteConfig.websiteTitle}
             </h5>
             <button
               id="hamburger-close-button"

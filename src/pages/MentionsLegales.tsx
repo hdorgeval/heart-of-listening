@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import { usePublicPage } from '../contexts/userContext';
+import { useDate } from '../hooks/useCalendar';
 import { useMetaDescription } from '../hooks/useMetaDescription';
 import { useTitle } from '../hooks/useTitle';
 import { websiteConfig } from '../website.config';
@@ -16,6 +17,7 @@ export const MentionsLegales: FC = () => {
   usePublicPage();
   useTitle(`Mentions légales | ${websiteConfig.websiteTitle}`);
   useMetaDescription(`Mentions légales | ${websiteConfig.websiteTitle}`);
+  const dateInfos = useDate(websiteConfig.legalNotice.lastUpdate);
   return (
     <>
       <HambugerMenu />
@@ -25,14 +27,16 @@ export const MentionsLegales: FC = () => {
             <PageTitle>Mentions légales</PageTitle>
           </div>
           <div>
-            <PageSubTitle className="fs-6">En vigueur au 28/02/2023</PageSubTitle>
+            {dateInfos && (
+              <PageSubTitle className="fs-6">{`En vigueur au ${dateInfos.longDate}`}</PageSubTitle>
+            )}
           </div>
           <div className="fs-6 fw-bolder mt-4 mx-4 text-start text-body-secondary">
             <p>
               Conformément aux dispositions des Articles 6-III et 19 de la Loi n°2004-575 du 21 juin
               2004 pour la Confiance dans l'économie numérique, dite L.C.E.N., il est porté à la
-              connaissance des utilisateurs et visiteurs, ci-après l' "Utilisateur", du site
-              https://marie-anne-sevin.com , ci-après le "Site", les présentes mentions légales.
+              connaissance des utilisateurs et visiteurs, ci-après l' "Utilisateur", du site{' '}
+              {websiteConfig.websiteUrl} , ci-après le "Site", les présentes mentions légales.
             </p>
             <p>
               La connexion et la navigation sur le Site par l'Utilisateur implique acceptation

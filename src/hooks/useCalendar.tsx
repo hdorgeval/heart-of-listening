@@ -24,6 +24,7 @@ export interface DateInfos {
   month: string;
   year: string;
   isPassed: boolean;
+  longDate: string;
 }
 
 function extractDateInfosFromIsoDate(isoDate: string | undefined): DateInfos | undefined {
@@ -35,14 +36,21 @@ function extractDateInfosFromIsoDate(isoDate: string | undefined): DateInfos | u
   const weekday = new Intl.DateTimeFormat('fr', { weekday: 'long' }).format(new Date(isoDate));
   const month = new Intl.DateTimeFormat('fr', { month: 'long' }).format(new Date(isoDate));
   const isPassed = new Date() >= new Date(isoDate);
+  const longDate = new Intl.DateTimeFormat('fr', {
+    day: 'numeric',
+    month: 'long',
+    weekday: 'long',
+    year: 'numeric',
+  }).format(new Date(isoDate));
 
   return {
-    day,
-    weekday,
-    month,
-    year,
     date: isoDate,
+    day,
     isPassed,
+    longDate,
+    month,
+    weekday,
+    year,
   };
 }
 
@@ -79,4 +87,11 @@ export const useCalendar = (options?: CalendarOptions) => {
   }, [endDateInfos, startDateInfos]);
 
   return { currentYear, startDateInfos, endDateInfos, fromStartDateToEndDateText };
+};
+
+export const useDate = (isoDate: string) => {
+  const dateInfos = useMemo(() => {
+    return extractDateInfosFromIsoDate(isoDate);
+  }, [isoDate]);
+  return dateInfos;
 };

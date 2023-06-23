@@ -13,7 +13,7 @@ export const Footer: FC = () => {
           <span className="fs-1">
             <OpenExternalLink
               className="nav-link"
-              link={websiteConfig.facebookLink}
+              link={websiteConfig.links.facebook}
               relationship="nofollow"
               aria-label="my facebook"
               title="my facebook"
@@ -25,7 +25,7 @@ export const Footer: FC = () => {
           <span className="fs-1 ms-3">
             <OpenExternalLink
               className="nav-link"
-              link={websiteConfig.whatsAppLink}
+              link={websiteConfig.links.whatsApp}
               relationship="nofollow"
               aria-label="my whatsapp"
               title="my whatsapp"
@@ -37,7 +37,7 @@ export const Footer: FC = () => {
           <span className="fs-1 ms-3">
             <OpenExternalLink
               className="nav-link"
-              link={websiteConfig.youtubeLink}
+              link={websiteConfig.links.youtube}
               relationship="nofollow"
               aria-label="my youtube"
               title="my youtube"
@@ -49,7 +49,7 @@ export const Footer: FC = () => {
           <span className="fs-1 ms-3">
             <OpenExternalLink
               className="nav-link"
-              link={websiteConfig.instagramLink}
+              link={websiteConfig.links.instagram}
               relationship="nofollow"
               aria-label="my instagram"
               title="my instagram"

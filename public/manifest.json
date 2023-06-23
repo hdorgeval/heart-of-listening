@@ -1,6 +1,6 @@
 {
-  "name": "Au coeur de l'écoute",
-  "short_name": "Au coeur de l'écoute",
+  "name": "{{websiteTitle}}",
+  "short_name": "{{websiteShortTitle}}",
 
   "theme_color": "#ffffff",
   "background_color": "#ffffff",

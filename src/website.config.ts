@@ -1,24 +1,43 @@
 export interface WebSiteConfig {
   copyrightOwner: string;
   email: string;
-  facebookLink: string;
   hamburgerMenuPosition: 'left' | 'right';
-  instagramLink: string;
   phoneNumber: string;
   websiteSubTitle: string;
   websiteTitle: string;
-  whatsAppLink: string;
-  youtubeLink: string;
+  websiteShortTitle: string;
+  websiteUrl: string;
+  legalNotice: LegalNotice;
+  links: Links;
 }
+
+export interface LegalNotice {
+  lastUpdate: string; // date in ISO format : yyyy/mm/dd
+}
+
+export interface Links {
+  facebook: string;
+  instagram: string;
+  whatsApp: string;
+  youtube: string;
+}
+
 export const websiteConfig: WebSiteConfig = {
-  facebookLink: 'https://www.facebook.com/john-doe',
-  whatsAppLink: 'https://wa.me/0123456789',
-  youtubeLink: 'https://www.youtube.com/channel/0123456789',
-  instagramLink: 'https://www.instagram.com/john-doe/?hl=fr',
-  phoneNumber: '0614763770',
-  email: 'john.doe@gmail.com',
   copyrightOwner: 'John Doe',
-  websiteTitle: "Au coeur de l'écoute",
-  websiteSubTitle: 'Lorem ipsum dolor sit amet',
+  email: 'john.doe@gmail.com',
   hamburgerMenuPosition: 'left',
+  phoneNumber: '0614763770',
+  websiteSubTitle: 'Lorem ipsum dolor sit amet',
+  websiteTitle: "Au coeur de l'écoute",
+  websiteShortTitle: "Au coeur de l'écoute",
+  websiteUrl: 'https://mon-site-web.com',
+  legalNotice: {
+    lastUpdate: '2023/06/21',
+  },
+  links: {
+    youtube: 'https://www.youtube.com/channel/0123456789',
+    instagram: 'https://www.instagram.com/john-doe/?hl=fr',
+    facebook: 'https://www.facebook.com/john-doe',
+    whatsApp: 'https://wa.me/0123456789',
+  },
 };

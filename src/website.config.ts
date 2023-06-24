@@ -1,7 +1,7 @@
 export interface WebSiteConfig {
   copyrightOwner: string;
   hamburgerMenuPosition: 'left' | 'right';
-  phoneNumber: string;
+  socialLinksMenuPosition: 'left' | 'right';
   websiteSubTitle: string;
   websiteTitle: string;
   websiteShortTitle: string;
@@ -27,12 +27,13 @@ export interface Links {
   whatsApp: Link;
   youtube: Link;
   email: Link;
+  phone: Link;
 }
 
 export const websiteConfig: WebSiteConfig = {
   copyrightOwner: 'John Doe',
   hamburgerMenuPosition: 'left',
-  phoneNumber: '0614763770',
+  socialLinksMenuPosition: 'right',
   websiteSubTitle: 'Lorem ipsum dolor sit amet',
   websiteTitle: "Au coeur de l'écoute",
   websiteShortTitle: "Au coeur de l'écoute",
@@ -42,6 +43,12 @@ export const websiteConfig: WebSiteConfig = {
   },
   displaySocialLinksInFooter: true,
   links: {
+    phone: {
+      url: '0614763770',
+      title: "M'appeler au téléphone",
+      label: 'Phone',
+      show: true,
+    },
     email: {
       url: 'john.doe@gmail.com',
       title: "M'envoyer un e-mail",

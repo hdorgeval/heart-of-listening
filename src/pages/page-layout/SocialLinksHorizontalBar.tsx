@@ -33,7 +33,6 @@ export const SocialLinksHorizontalBar: FC = () => {
           </OpenExternalLink>
         </span>
       )}
-
       {websiteConfig.links.youtube.show && (
         <span className="fs-1 ms-3">
           <OpenExternalLink
@@ -63,19 +62,20 @@ export const SocialLinksHorizontalBar: FC = () => {
           </OpenExternalLink>
         </span>
       )}
-
-      <span className="fs-1 ms-3">
-        <OpenExternalLink
-          className="nav-link"
-          link={`tel:${websiteConfig.phoneNumber}`}
-          relationship="nofollow"
-          aria-label="m'appeler par téléphone"
-          title="m'appeler par téléphone"
-          analyticsEvent="appel-telephone"
-        >
-          <i className="bi bi-telephone-outbound"></i>
-        </OpenExternalLink>
-      </span>
+      {websiteConfig.links.phone.show && (
+        <span className="fs-1 ms-3">
+          <OpenExternalLink
+            className="nav-link"
+            link={`tel:${websiteConfig.links.phone.url}`}
+            relationship="nofollow"
+            aria-label={websiteConfig.links.phone.label}
+            title={websiteConfig.links.phone.title}
+            analyticsEvent="appel-telephone"
+          >
+            <i className="bi bi-telephone-outbound"></i>
+          </OpenExternalLink>
+        </span>
+      )}
       {websiteConfig.links.email.show && (
         <span className="fs-1 ms-3">
           <OpenExternalLink

@@ -11,7 +11,8 @@ export const Footer: FC = () => {
     <footer className="">
       <div className="d-flex flex-column align-items-center">
         {websiteConfig.displaySocialLinksInFooter && <SocialLinksHorizontalBar />}
-        <SocialLinksVerticalNavBar />
+        {websiteConfig.displaySocialLinksViaButton && <SocialLinksVerticalNavBar />}
+
         <span className="fs-7 fw-lighter mb-1">
           <i className="bi bi-c-circle me-2"></i>
           {`tous droits réservés ${websiteConfig.copyrightOwner} - ${currentYear}`}

@@ -9,6 +9,7 @@ export interface WebSiteConfig {
   legalNotice: LegalNotice;
   links: Links;
   displaySocialLinksInFooter: boolean;
+  displaySocialLinksViaButton: boolean;
 }
 
 export interface LegalNotice {
@@ -42,6 +43,7 @@ export const websiteConfig: WebSiteConfig = {
     lastUpdate: '2023/06/21',
   },
   displaySocialLinksInFooter: true,
+  displaySocialLinksViaButton: true,
   links: {
     phone: {
       url: '0614763770',

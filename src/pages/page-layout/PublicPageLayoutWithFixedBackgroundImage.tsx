@@ -74,8 +74,8 @@ export const PublicPageLayoutWithFixedBackgroundImage: FC<PageLyoutOwnProps> = (
             height: '100vh',
           }}
         >
-          <div className="container h-100 d-flex flex-column justify-content-between align-items-center overflow-y-scroll">
-            <div>{children}</div>
+          <div className="container h-100 d-flex flex-column align-items-center overflow-y-scroll">
+            {children}
             <Footer />
           </div>
         </div>

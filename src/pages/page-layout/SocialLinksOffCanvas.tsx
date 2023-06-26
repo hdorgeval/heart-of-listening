@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { SocialLinksHorizontalBar } from './SocialLinksHorizontalBar';
 
-export const SocialLinksVerticalNavBar: FC = () => {
+export const SocialLinksOffCanvas: FC = () => {
   return (
     <>
       <button
@@ -40,4 +40,4 @@ export const SocialLinksVerticalNavBar: FC = () => {
   );
 };
 
-SocialLinksVerticalNavBar.displayName = 'SocialLinksHorizontalBar';
+SocialLinksOffCanvas.displayName = 'SocialLinksHorizontalBar';

@@ -29,6 +29,7 @@ export interface Links {
   youtube: Link;
   email: Link;
   phone: Link;
+  linkedin: Link;
 }
 
 export const websiteConfig: WebSiteConfig = {
@@ -74,6 +75,12 @@ export const websiteConfig: WebSiteConfig = {
       title: 'Me contacter sur Facebook',
       label: 'Facebook',
       show: true,
+    },
+    linkedin: {
+      url: 'https://www.linkedin.com/in/john-doe/',
+      title: 'Me contacter sur Linkedin',
+      label: 'Linkedin',
+      show: false,
     },
     whatsApp: {
       url: 'https://wa.me/0123456789',

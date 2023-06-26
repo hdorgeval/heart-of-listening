@@ -32,23 +32,21 @@ export const LandingPage: FC = () => {
           }}
         >
           <div className="container h-100 d-flex flex-column justify-content-between align-items-center overflow-y-scroll">
-            <div className="flex-grow-1"></div>
+            <div className="flex-grow-2"></div>
             <div className="mt-4">
               <PageTitle className="font-marcellus">{websiteConfig.websiteTitle}</PageTitle>
-            </div>
-            <div>
               <PageSubTitle className="fs-7">{websiteConfig.websiteSubTitle}</PageSubTitle>
+              <OpenExternalLinkButton
+                className="btn btn-outline-light fw-bolder w-80 mt-4 text-nowrap"
+                link="https://calendar.google.com/calendar/u/0/appointments/AcZssZ1eB8RwFR4X3gqAJRGBFG18VLTl87iCRz94200="
+                title="Me contacter ou prendre un rendez-vous"
+                analyticsEvent="rdv-ou-contact"
+              >
+                <div className="d-flex flex-column align-items-center">
+                  <span className="">Prendre un rendez-vous</span>
+                </div>
+              </OpenExternalLinkButton>
             </div>
-            <OpenExternalLinkButton
-              className="btn btn-outline-light fw-bolder w-75 mt-4"
-              link="https://calendar.google.com/calendar/u/0/appointments/AcZssZ1eB8RwFR4X3gqAJRGBFG18VLTl87iCRz94200="
-              title="Me contacter ou prendre un rendez-vous"
-              analyticsEvent="rdv-ou-contact"
-            >
-              <div className="d-flex flex-column align-items-center">
-                <span>Prendre un rendez-vous</span>
-              </div>
-            </OpenExternalLinkButton>
             <Footer />
           </div>
         </div>

@@ -11,6 +11,8 @@ export const SocialLinksOffCanvas: FC = () => {
         data-bs-target="#offcanvasSocialLinks"
         aria-controls="offcanvasSocialLinks"
         style={{ marginBottom: '33vh' }}
+        title="Me contacter"
+        aria-label="Me contacter"
       >
         <i className="bi bi-three-dots text-white fs-navbar-toggler-3"></i>
       </button>

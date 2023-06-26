@@ -10,7 +10,7 @@ export const SocialLinksOffCanvas: FC = () => {
         data-bs-toggle="offcanvas"
         data-bs-target="#offcanvasSocialLinks"
         aria-controls="offcanvasSocialLinks"
-        style={{ marginBottom: '33vh' }}
+        style={{ marginBottom: '30vh' }}
         title="Me contacter"
         aria-label="Me contacter"
       >
@@ -42,4 +42,4 @@ export const SocialLinksOffCanvas: FC = () => {
   );
 };
 
-SocialLinksOffCanvas.displayName = 'SocialLinksHorizontalBar';
+SocialLinksOffCanvas.displayName = 'SocialLinksOffCanvas';

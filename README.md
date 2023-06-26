@@ -6,6 +6,7 @@
 
 [Web App Manifest Generator](https://tomitm.github.io/appmanifest/)
 [Generate Icons](https://manifest-gen.netlify.app/)
+[Favicon Generator](https://realfavicongenerator.net/)
 
 ## Google Analytics
 

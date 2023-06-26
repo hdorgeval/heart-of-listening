@@ -4,7 +4,7 @@ import { websiteConfig } from '../../website.config';
 
 export const SocialLinksHorizontalBar: FC = () => {
   return (
-    <div className="d-flex p-4 flex-row align-items-center">
+    <div className="d-flex flex-row align-items-center">
       {websiteConfig.links.linkedin.show && (
         <span className="fs-1">
           <OpenExternalLink

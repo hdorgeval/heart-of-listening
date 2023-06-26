@@ -1,7 +1,7 @@
 export interface WebSiteConfig {
   copyrightOwner: string;
   hamburgerMenuPosition: 'left' | 'right';
-  socialLinksMenuPosition: 'left' | 'right';
+  socialLinksMenuPosition: 'left' | 'right' | 'bottom';
   websiteSubTitle: string;
   websiteTitle: string;
   websiteShortTitle: string;
@@ -35,7 +35,7 @@ export interface Links {
 export const websiteConfig: WebSiteConfig = {
   copyrightOwner: 'John Doe',
   hamburgerMenuPosition: 'left',
-  socialLinksMenuPosition: 'right',
+  socialLinksMenuPosition: 'bottom',
   websiteSubTitle: 'Lorem ipsum dolor sit amet',
   websiteTitle: "Au coeur de l'écoute",
   websiteShortTitle: "Au coeur de l'écoute",

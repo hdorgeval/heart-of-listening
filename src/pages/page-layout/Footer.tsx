@@ -8,7 +8,7 @@ export const Footer: FC = () => {
   const { currentYear } = useCalendar();
 
   return (
-    <footer className="">
+    <footer className="p-4">
       <div className="d-flex flex-column align-items-center">
         {websiteConfig.displaySocialLinksInFooter && <SocialLinksHorizontalBar />}
         {websiteConfig.displaySocialLinksViaButton && <SocialLinksVerticalNavBar />}

@@ -8,6 +8,7 @@ export interface WebSiteConfig {
   websiteUrl: string;
   legalNotice: LegalNotice;
   links: Links;
+  displayGuidedTour: boolean;
   displaySocialLinksInFooter: boolean;
   displaySocialLinksViaButton: boolean;
 }
@@ -44,6 +45,7 @@ export const websiteConfig: WebSiteConfig = {
   legalNotice: {
     lastUpdate: '2023/06/21',
   },
+  displayGuidedTour: false,
   displaySocialLinksInFooter: true,
   displaySocialLinksViaButton: true,
   links: {

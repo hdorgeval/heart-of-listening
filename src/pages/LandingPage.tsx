@@ -21,14 +21,15 @@ export const LandingPage: FC = () => {
           <div className="mt-4">
             <PageTitle className="font-marcellus">{websiteConfig.websiteTitle}</PageTitle>
             <PageSubTitle className="fs-7">{websiteConfig.websiteSubTitle}</PageSubTitle>
+
             <OpenExternalLinkButton
               className="btn btn-outline-light fw-bolder w-80 mt-4 text-nowrap"
-              link="https://calendar.google.com/calendar/u/0/appointments/AcZssZ1eB8RwFR4X3gqAJRGBFG18VLTl87iCRz94200="
-              title="Me contacter ou prendre un rendez-vous"
+              link={websiteConfig.links.rdv.url}
+              title={websiteConfig.links.rdv.title}
               analyticsEvent="rdv-ou-contact"
             >
               <div className="d-flex flex-column align-items-center">
-                <span className="">Prendre un rendez-vous</span>
+                <span className="">{websiteConfig.links.rdv.label}</span>
               </div>
             </OpenExternalLinkButton>
           </div>

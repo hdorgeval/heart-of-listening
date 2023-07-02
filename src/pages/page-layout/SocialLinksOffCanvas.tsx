@@ -1,4 +1,6 @@
 import { FC } from 'react';
+import { OpenExternalLinkButton } from '../../components/OpenExternalLinkButton';
+import { websiteConfig } from '../../website.config';
 import { SocialLinksHorizontalBar } from './SocialLinksHorizontalBar';
 
 export const SocialLinksOffCanvas: FC = () => {
@@ -21,7 +23,7 @@ export const SocialLinksOffCanvas: FC = () => {
         tabIndex={-1}
         id="offcanvasSocialLinks"
         aria-labelledby="offcanvasSocialLinksLabel"
-        style={{ minHeight: '40vh' }}
+        style={{ minHeight: '50vh' }}
       >
         <div className="offcanvas-header">
           <h5 className="offcanvas-title ms-1" id="offcanvasSocialLinksLabel">
@@ -36,6 +38,18 @@ export const SocialLinksOffCanvas: FC = () => {
         </div>
         <div className="offcanvas-body small d-flex flex-column align-items-center pt-0">
           <SocialLinksHorizontalBar />
+          {websiteConfig.links.rdv.show && (
+            <OpenExternalLinkButton
+              className="btn btn-outline-light fw-bolder w-75 mt-4 text-nowrap"
+              link={websiteConfig.links.rdv.url}
+              title={websiteConfig.links.rdv.title}
+              analyticsEvent="rdv-ou-contact"
+            >
+              <div className="d-flex flex-column align-items-center">
+                <span className="">{websiteConfig.links.rdv.label}</span>
+              </div>
+            </OpenExternalLinkButton>
+          )}
         </div>
       </div>
     </>

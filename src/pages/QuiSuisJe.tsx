@@ -24,35 +24,35 @@ export const QuiSuisJe: FC = () => {
             <p>Je suis John Doe.</p>
             <p className="font-monserrat">
               Au cœur de mon identité se trouvent mes passions, ces feux intérieurs qui m'animent et
-              me donnent un sens à chaque pas que je fais. (font monserrat)
+              donnent un sens à chaque pas que je fais. (font monserrat)
             </p>
             <p className="font-playfair">
               Au cœur de mon identité se trouvent mes passions, ces feux intérieurs qui m'animent et
-              me donnent un sens à chaque pas que je fais. (font playfair)
+              donnent un sens à chaque pas que je fais. (font playfair)
             </p>
             <p className="font-raleway">
               Au cœur de mon identité se trouvent mes passions, ces feux intérieurs qui m'animent et
-              me donnent un sens à chaque pas que je fais. (font raleway)
+              donnent un sens à chaque pas que je fais. (font raleway)
             </p>
             <p className="font-marcellus">
               Au cœur de mon identité se trouvent mes passions, ces feux intérieurs qui m'animent et
-              me donnent un sens à chaque pas que je fais. (font marcellus)
+              donnent un sens à chaque pas que je fais. (font marcellus)
             </p>
             <p className="font-dancing-script fs-3">
               Au cœur de mon identité se trouvent mes passions, ces feux intérieurs qui m'animent et
-              me donnent un sens à chaque pas que je fais. (font dancing-script)
+              donnent un sens à chaque pas que je fais. (font dancing-script)
             </p>
             <p className="font-open-sans">
               Au cœur de mon identité se trouvent mes passions, ces feux intérieurs qui m'animent et
-              me donnent un sens à chaque pas que je fais. (font open-sans)
+              donnent un sens à chaque pas que je fais. (font open-sans)
             </p>
             <p className="font-mali">
               Au cœur de mon identité se trouvent mes passions, ces feux intérieurs qui m'animent et
-              me donnent un sens à chaque pas que je fais. (font mali)
+              donnent un sens à chaque pas que je fais. (font mali)
             </p>
             <p className="mb-0 pb-0 font-kite-one">
               Au cœur de mon identité se trouvent mes passions, ces feux intérieurs qui m'animent et
-              me donnent un sens à chaque pas que je fais. (font kite-one)
+              donnent un sens à chaque pas que je fais. (font kite-one)
             </p>
           </SemiTransparentTile>
         </div>

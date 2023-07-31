@@ -11,6 +11,7 @@ export interface WebSiteConfig {
   displayGuidedTour: boolean;
   displaySocialLinksInFooter: boolean;
   displaySocialLinksViaButton: boolean;
+  displayAccountButtons: boolean;
 }
 
 export interface LegalNotice {
@@ -32,6 +33,8 @@ export interface Links {
   phone: Link;
   linkedin: Link;
   rdv: Link;
+  googleMaps: Link;
+  waze: Link;
 }
 
 export const websiteConfig: WebSiteConfig = {
@@ -48,9 +51,10 @@ export const websiteConfig: WebSiteConfig = {
   displayGuidedTour: false,
   displaySocialLinksInFooter: true,
   displaySocialLinksViaButton: true,
+  displayAccountButtons: true,
   links: {
     phone: {
-      url: '0614763770',
+      url: '0123456789',
       title: "M'appeler au téléphone",
       label: 'Phone',
       show: true,
@@ -86,7 +90,7 @@ export const websiteConfig: WebSiteConfig = {
       show: false,
     },
     whatsApp: {
-      url: 'https://wa.me/0123456789',
+      url: 'https://wa.me/33123456789',
       title: 'Me contacter sur WhatsApp',
       label: 'WhatsApp',
       show: true,
@@ -95,6 +99,18 @@ export const websiteConfig: WebSiteConfig = {
       url: 'https://calendly.com/fr',
       title: 'Me contacter ou prendre un rendez-vous',
       label: 'Prendre un rendez-vous',
+      show: true,
+    },
+    googleMaps: {
+      url: 'https://goo.gl/maps/0123456789',
+      title: 'Itinéraire via Google Maps',
+      label: 'Itinéraire via G. Maps',
+      show: true,
+    },
+    waze: {
+      url: 'https://ul.waze.com/ul?ll=0%2C0&navigate=yes&zoom=17&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location',
+      title: 'Itinéraire via Waze',
+      label: 'Itinéraire via Waze',
       show: true,
     },
   },

@@ -8,7 +8,7 @@ export const LandingPage: FC = () => {
   return (
     <>
       <PublicPageLayoutWithFixedBackgroundImage
-        backgroundImageUrl="/images/landing-page-background.jpg"
+        backgroundImageUrl="/images/background-landing-page.jpg"
         backgroundOverlay="linear-gradient(to bottom,rgba(0, 0, 0, 0.1), rgba(79, 79, 93, 0.40))"
         backgroundPositionX="29%"
         backgroundPositionY="29%"

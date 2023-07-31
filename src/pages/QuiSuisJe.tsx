@@ -23,52 +23,36 @@ export const QuiSuisJe: FC = () => {
             <p className="">Bonjour !</p>
             <p>Je suis John Doe.</p>
             <p className="font-monserrat">
-              Curabitur in mauris dapibus, aliquam velit sit amet, consequat metus. Praesent at est
-              nunc. Fusce sed erat ex. Aliquam fringilla euismod vestibulum. Donec imperdiet nec est
-              id aliquam. Sed sed ante ipsum. Cras id malesuada eros. Proin pharetra ultricies
-              accumsan. Etiam placerat tempor nunc vitae cursus. (font monserrat)
+              Au cœur de mon identité se trouvent mes passions, ces feux intérieurs qui m'animent et
+              me donnent un sens à chaque pas que je fais. (font monserrat)
             </p>
             <p className="font-playfair">
-              Curabitur in mauris dapibus, aliquam velit sit amet, consequat metus. Praesent at est
-              nunc. Fusce sed erat ex. Aliquam fringilla euismod vestibulum. Donec imperdiet nec est
-              id aliquam. Sed sed ante ipsum. Cras id malesuada eros. Proin pharetra ultricies
-              accumsan. Etiam placerat tempor nunc vitae cursus. (font playfair)
+              Au cœur de mon identité se trouvent mes passions, ces feux intérieurs qui m'animent et
+              me donnent un sens à chaque pas que je fais. (font playfair)
             </p>
             <p className="font-raleway">
-              Curabitur in mauris dapibus, aliquam velit sit amet, consequat metus. Praesent at est
-              nunc. Fusce sed erat ex. Aliquam fringilla euismod vestibulum. Donec imperdiet nec est
-              id aliquam. Sed sed ante ipsum. Cras id malesuada eros. Proin pharetra ultricies
-              accumsan. Etiam placerat tempor nunc vitae cursus. (font raleway)
+              Au cœur de mon identité se trouvent mes passions, ces feux intérieurs qui m'animent et
+              me donnent un sens à chaque pas que je fais. (font raleway)
             </p>
             <p className="font-marcellus">
-              Curabitur in mauris dapibus, aliquam velit sit amet, consequat metus. Praesent at est
-              nunc. Fusce sed erat ex. Aliquam fringilla euismod vestibulum. Donec imperdiet nec est
-              id aliquam. Sed sed ante ipsum. Cras id malesuada eros. Proin pharetra ultricies
-              accumsan. Etiam placerat tempor nunc vitae cursus. (font marcellus)
+              Au cœur de mon identité se trouvent mes passions, ces feux intérieurs qui m'animent et
+              me donnent un sens à chaque pas que je fais. (font marcellus)
             </p>
             <p className="font-dancing-script fs-3">
-              Curabitur in mauris dapibus, aliquam velit sit amet, consequat metus. Praesent at est
-              nunc. Fusce sed erat ex. Aliquam fringilla euismod vestibulum. Donec imperdiet nec est
-              id aliquam. Sed sed ante ipsum. Cras id malesuada eros. Proin pharetra ultricies
-              accumsan. Etiam placerat tempor nunc vitae cursus. (font dancing-script)
+              Au cœur de mon identité se trouvent mes passions, ces feux intérieurs qui m'animent et
+              me donnent un sens à chaque pas que je fais. (font dancing-script)
             </p>
             <p className="font-open-sans">
-              Curabitur in mauris dapibus, aliquam velit sit amet, consequat metus. Praesent at est
-              nunc. Fusce sed erat ex. Aliquam fringilla euismod vestibulum. Donec imperdiet nec est
-              id aliquam. Sed sed ante ipsum. Cras id malesuada eros. Proin pharetra ultricies
-              accumsan. Etiam placerat tempor nunc vitae cursus. (font open-sans)
+              Au cœur de mon identité se trouvent mes passions, ces feux intérieurs qui m'animent et
+              me donnent un sens à chaque pas que je fais. (font open-sans)
             </p>
             <p className="font-mali">
-              Curabitur in mauris dapibus, aliquam velit sit amet, consequat metus. Praesent at est
-              nunc. Fusce sed erat ex. Aliquam fringilla euismod vestibulum. Donec imperdiet nec est
-              id aliquam. Sed sed ante ipsum. Cras id malesuada eros. Proin pharetra ultricies
-              accumsan. Etiam placerat tempor nunc vitae cursus. (font mali)
+              Au cœur de mon identité se trouvent mes passions, ces feux intérieurs qui m'animent et
+              me donnent un sens à chaque pas que je fais. (font mali)
             </p>
             <p className="mb-0 pb-0 font-kite-one">
-              Curabitur in mauris dapibus, aliquam velit sit amet, consequat metus. Praesent at est
-              nunc. Fusce sed erat ex. Aliquam fringilla euismod vestibulum. Donec imperdiet nec est
-              id aliquam. Sed sed ante ipsum. Cras id malesuada eros. Proin pharetra ultricies
-              accumsan. Etiam placerat tempor nunc vitae cursus. (font kite-one)
+              Au cœur de mon identité se trouvent mes passions, ces feux intérieurs qui m'animent et
+              me donnent un sens à chaque pas que je fais. (font kite-one)
             </p>
           </SemiTransparentTile>
         </div>
